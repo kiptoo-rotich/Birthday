@@ -7,7 +7,7 @@ function calculate() {
 
 
     var dayOfTheWeek = Math.floor((year() + month() + century() + day()) % 7);
-    
+
 
     if (gender() == 1) {
         if (dayOfTheWeek == 0) {
@@ -25,8 +25,22 @@ function calculate() {
         } else {
             alert("Hey there, your Akhan name is " + male[6]);
         }
-    } else {
-        alert("Female!");
+    } else if(gender==2) {
+        if (dayOfTheWeek == 0) {
+            alert("Hey there, your Akhan name is " + female[0]);
+        } else if (dayOfTheWeek == 1) {
+            alert("Hey there, your Akhan name is " + female[1]);
+        } else if (dayOfTheWeek == 2) {
+            alert("Hey there, your Akhan name is " + female[2]);
+        } else if (dayOfTheWeek == 3) {
+            alert("Hey there, your Akhan name is " + female[3]);
+        } else if (dayOfTheWeek == 4) {
+            alert("Hey there, your Akhan name is " + female[4]);
+        } else if (dayOfTheWeek == 5) {
+            alert("Hey there, your Akhan name is " + female[5]);
+        } else {
+            alert("Hey there, your Akhan name is " + female[6]);
+        }
     }
 
 }
@@ -87,4 +101,8 @@ function leapYearCode() {
     var Y = birthYear.slice(2, 4);
     var leap = parseInt(Y);
 
+}
+
+function reset(){
+    location.reload();
 }
