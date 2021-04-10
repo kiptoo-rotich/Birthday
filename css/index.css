@@ -12,3 +12,7 @@ body{
     margin-top: 10vh;
     border-radius: 20px;
 }
+
+.bottom-margin{
+    margin-bottom: 1vh;
+}
