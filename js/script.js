@@ -1,6 +1,9 @@
 
 function calculate() {
 
+
+    var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
     var dayOfTheWeek = (year() + month() + century() + day()) % 7;
 
     alert(Math.floor(dayOfTheWeek));
@@ -61,20 +64,7 @@ function leapYearCode() {
 }
 
 function name() {
-    var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-    var female = ["Akosua", "Adwoa", "Abenaa", "Akua",]
+    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    Female
-    Sunday: Akosua
-
-    Monday: Adwoa
-
-    Tuesday: Abenaa
-
-    Wednesday: Akua
-
-    Thursday: Yaa
-
-    Friday: Afua
 }
