@@ -5,16 +5,40 @@ function calculate() {
     var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    var dayOfTheWeek = (year() + month() + century() + day()) % 7;
+    var dayOfTheWeek = Math.floor((year() + month() + century() + day()) % 7);
+    
 
-    alert(Math.floor(dayOfTheWeek));
+    if (gender() == 1) {
+        if (dayOfTheWeek == 0) {
+            alert("Hey there, your Akhan name is " + male[0]);
+        } else if (dayOfTheWeek == 1) {
+            alert("Hey there, your Akhan name is " + male[1]);
+        } else if (dayOfTheWeek == 2) {
+            alert("Hey there, your Akhan name is " + male[2]);
+        } else if (dayOfTheWeek == 3) {
+            alert("Hey there, your Akhan name is " + male[3]);
+        } else if (dayOfTheWeek == 4) {
+            alert("Hey there, your Akhan name is " + male[4]);
+        } else if (dayOfTheWeek == 5) {
+            alert("Hey there, your Akhan name is " + male[5]);
+        } else {
+            alert("Hey there, your Akhan name is " + male[6]);
+        }
+    } else {
+        alert("Female!");
+    }
 
 }
 
 function gender() {
     var gender = document.getElementById("gender");
     var genderName = parseInt(gender.options[gender.selectedIndex].value);
-    return genderName;
+
+    if (genderName == 0) {
+        alert("Invalid gender selection!");
+    } else {
+        return genderName;
+    }
 }
 
 function day() {
