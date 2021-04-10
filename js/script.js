@@ -25,7 +25,7 @@ function calculate() {
         } else {
             alert("Hey there, your Akhan name is " + male[6]);
         }
-    } else if(gender==2) {
+    } else if(gender()==2) {
         if (dayOfTheWeek == 0) {
             alert("Hey there, your Akhan name is " + female[0]);
         } else if (dayOfTheWeek == 1) {
