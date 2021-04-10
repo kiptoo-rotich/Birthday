@@ -63,8 +63,3 @@ function leapYearCode() {
     var leap = parseInt(Y);
 
 }
-
-function name() {
-
-
-}
