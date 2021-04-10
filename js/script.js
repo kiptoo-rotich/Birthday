@@ -5,6 +5,7 @@ function calculate() {
     var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
+
     var dayOfTheWeek = Math.floor((year() + month() + century() + day()) % 7);
     
 
@@ -35,7 +36,7 @@ function gender() {
     var genderName = parseInt(gender.options[gender.selectedIndex].value);
 
     if (genderName == 0) {
-        alert("Invalid gender selection!");
+        alert("Provide all fields first!");
     } else {
         return genderName;
     }
