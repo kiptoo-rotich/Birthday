@@ -31,60 +31,67 @@
                 </ul>
 
                 <label for="gender">Select your gender</label>
-                <select name="gender" id="gender" class="form-select">
+                <select name="gender" id="gender" class="form-select bottom-margin">
                     <option value="0">Gender</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
                 </select>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="number" name="day" id="day" class="form-control" placeholder="Day">
+                    </div>
 
-                <input type="number" name="day" id="day" class="form-control">
-                
+                    <div class="col-md-4">
+                        <select name="month" id="month" class="form-select">
+                            <option value="January">Month</option>
+                            <option value="0">January</option>
+                            <option value="3">February</option>
+                            <option value="3">March</option>
+                            <option value="6">April</option>
+                            <option value="1">May</option>
+                            <option value="4">June</option>
+                            <option value="6">July</option>
+                            <option value="2">August</option>
+                            <option value="5">September</option>
+                            <option value="0">October</option>
+                            <option value="3">Novermber</option>
+                            <option value="5">December</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="year" id="year" class="form-select bottom-margin">
+                            <option value="year">Year</option>
+                            <option value="1">1980</option>
+                            <option value="2">1981</option>
+                            <option value="3">1982</option>
+                            <option value="4">1983</option>
+                            <option value="5">1984</option>
+                            <option value="6">1985</option>
+                            <option value="7">1986</option>
+                            <option value="8">1987</option>
+                            <option value="9">1988</option>
+                            <option value="10">1989</option>
+                            <option value="11">1990</option>
+                            <option value="12">1991</option>
+                            <option value="13">1992</option>
+                            <option value="14">1993</option>
+                            <option value="15">1994</option>
+                            <option value="16">1995</option>
+                            <option value="17">1996</option>
+                            <option value="18">1997</option>
+                            <option value="19">1998</option>
+                            <option value="20">1999</option>
+                            <option value="21">2000</option>
+                            <option value="22">2001</option>
+                            <option value="23">2002</option>
+                            <option value="24">2003</option>
+                            <option value="25">2004</option>
+                            <option value="26">2005</option>
+                        </select>
 
-                <select name="month" id="month" class="form-select">
-                    <option value="Januaryg">Month</option>
-                    <option value="0">January</option>
-                    <option value="3">February</option>
-                    <option value="3">March</option>
-                    <option value="6">April</option>
-                    <option value="1">May</option>
-                    <option value="4">June</option>
-                    <option value="6">July</option>
-                    <option value="2">August</option>
-                    <option value="5">September</option>
-                    <option value="0">October</option>
-                    <option value="3">Novermber</option>
-                    <option value="5">December</option>
-                </select>
+                    </div>
 
-                <select name="year" id="year" class="form-select">
-                    <option value="year">Year</option>
-                    <option value="1">1980</option>
-                    <option value="2">1981</option>
-                    <option value="3">1982</option>
-                    <option value="4">1983</option>
-                    <option value="5">1984</option>
-                    <option value="6">1985</option>
-                    <option value="7">1986</option>
-                    <option value="8">1987</option>
-                    <option value="9">1988</option>
-                    <option value="10">1989</option>
-                    <option value="11">1990</option>
-                    <option value="12">1991</option>
-                    <option value="13">1992</option>
-                    <option value="14">1993</option>
-                    <option value="15">1994</option>
-                    <option value="16">1995</option>
-                    <option value="17">1996</option>
-                    <option value="18">1997</option>
-                    <option value="19">1998</option>
-                    <option value="20">1999</option>
-                    <option value="21">2000</option>
-                    <option value="22">2001</option>
-                    <option value="23">2002</option>
-                    <option value="24">2003</option>
-                    <option value="25">2004</option>
-                    <option value="26">2005</option>
-                </select>
+                </div>
 
                 <button type="submit" class="btn btn-primary" onclick="calculate()">Submit</button>
                 <button type="reset" class="btn btn-danger">Reset</button>
