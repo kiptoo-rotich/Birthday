@@ -3,6 +3,7 @@ function calculate() {
 
 
     var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     var dayOfTheWeek = (year() + month() + century() + day()) % 7;
 
@@ -65,6 +66,5 @@ function leapYearCode() {
 
 function name() {
 
-    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 }
