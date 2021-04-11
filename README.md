@@ -8,11 +8,18 @@ Sometimes people may forget the day of the week that they were born. But Ghana h
 * Open terminal
 * Change directory to the location you want to copy the project to.
 * Clone the repo {git clone https://github.com/rotich1/akan-name }
-* No, you have the project in your local machine
+* Now you have the project in your local machine
+## Behaviour Driven Development
+The application: 
+* Allows users to input the details i.e name, gender and date of birth.
+* If there is no input from user, the application alerts the user to provide the missing values.
+* Checks the inputs and validates if they are correct.
+* If inputs are invalid, the application gives an alert message to the user.
+* Else if inputs are correct, the application evaluates the day of the week and uses the result to derive the akan name based on the formula output and gender.  
 ### Live Site
 View [live](https://github.com/rotich1/akan-name)
 ## Known Bugs
-This website has a contact page which will ask for details like email and name. The system will just popup an alert and there'll not be be any actual communication from us through email yet. We're working to resolve that.
+No known bugs on the application except for contact links. Not all links are working as expected.
 ## Technologies Used
 * HTML
 * CSS
