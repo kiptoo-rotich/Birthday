@@ -12,19 +12,24 @@
 </head>
 
 <body>
-    <h1>MY AKHAN NAME</h1>
+    <h1>MY AKAN NAME</h1>
     <div class="container">
         <div class="row gx-5">
             <div class="col-md-5">
                 <h2>Description</h2>
-                <p>This application enables users to discover their Akan names which are derived from Ghanian culture.
+                <p>This application enables users to discover their <em>Akan names</em> which are derived from
+                    <strong>Ghanian
+                        culture</strong>.
                     Frequently in Ghana, children are given their first name as a
-                    'day name' which corresponds to the day in the week they were born.</p>
+                    'day name' which corresponds to the day in the week they were born. <a
+                        href="https://en.wikipedia.org/wiki/Akan_names#:~:text=The%20Akan%20people%20of%20Ghana,in%20which%20they%20were%20born.&text=Middle%20names%20have%20considerably%20more,or%20an%20ancestor's%20middle%20name.">Read more</a>
+                </p>
             </div>
             <div class="col-md-3">
                 <h2>Guide</h2>
                 <p>Before you submit, ensure you've selected:</p>
                 <ul>
+                    <li>Your preferred name</li>
                     <li>Your gender</li>
                     <li>Day of birth</li>
                     <li>Month of birth</li>
@@ -32,6 +37,9 @@
                 </ul>
             </div>
             <div class="col-md-4">
+                <h6 class="sub-heading">First/preferred name</h6>
+                <input type="text" name="firstname" id="firstname" placeholder="First name" itemid="fname"
+                    class="form-control">
                 <label for="gender" class="sub-heading">Select your gender</label>
                 <select name="gender" id="gender" class="form-select bottom-margin">
                     <option value="0">Gender</option>
@@ -46,11 +54,10 @@
 
                     <div class="col-md-4">
                         <select name="month" id="month" class="form-select">
-                            <option value="January">Month</option>
                             <option value="0">January</option>
                             <option value="3">February</option>
                             <option value="3">March</option>
-                            <option value="6">April</option>
+                            <option value="6" selected>April</option>
                             <option value="1">May</option>
                             <option value="4">June</option>
                             <option value="6">July</option>
@@ -63,7 +70,6 @@
                     </div>
                     <div class="col-md-4">
                         <select name="year" id="year" class="form-select bottom-margin">
-                            <option value="year">Year</option>
                             <option value="1">1980</option>
                             <option value="2">1981</option>
                             <option value="3">1982</option>
@@ -105,21 +111,23 @@
                             <option value="26">2018</option>
                             <option value="26">2019</option>
                             <option value="26">2020</option>
-                            <option value="26">2021</option>
+                            <option value="26" selected>2021</option>
                         </select>
 
                     </div>
 
                 </div>
 
-                <button type="submit" class="btn btn-primary" onclick="calculate()">Submit</button>
-                <button type="reset" class="btn btn-danger" onclick="reset()">Reset</button>
+                <button type="submit" class="btn btn-primary" onclick="calculate()" data-bs-toggle="tooltip" data-bs-placement="top" title="Derive my Akan name">Submit</button>
+                <button type="reset" class="btn btn-danger" onclick="reset()" data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh this page">Reset</button>
             </div>
         </div>
+        <h4 id="output" class="text-center"></h4>
     </div>
 
 
     <script src="js/script.js"></script>
+    <p class="footer text-center">@kiptoo-rotich Moringa School 2021</p>
 </body>
 
 
