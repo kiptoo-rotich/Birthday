@@ -17,7 +17,7 @@ The application:
 * If inputs are invalid, the application gives an alert message to the user.
 * Else if inputs are correct, the application evaluates the day of the week and uses the result to derive the akan name based on the formula output and gender.  
 ### Live Site
-View [live](https://github.com/rotich1/akan-name)
+View [live](https://rotich1.github.io/akan-name/)
 ## Known Bugs
 No known bugs on the application except for contact links. Not all links are working as expected.
 ## Technologies Used
