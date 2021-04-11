@@ -1,5 +1,6 @@
 
 function calculate() {
+
     var fname = document.getElementById("firstname").value;
 
 
@@ -9,7 +10,7 @@ function calculate() {
     if (century() == 20) {
 
     }
-    var dayOfTheWeek = Math.floor((year() + month() + century() + day()) % 7);
+    var dayOfTheWeek = Math.floor((year() + month() + century() + day() - leapYearCode()) % 7);
     if (fname == "" && gender() == 0 && day().day == null) {
         alert("Provide your name, gender and day of birth.")
     } else if (fname == "" && gender() == 0) {
@@ -120,8 +121,15 @@ function century() {
 function leapYearCode() {
     var year = document.getElementById("year");
     var birthYear = year.options[year.selectedIndex].text;
-    var Y = birthYear.slice(2, 4);
-    var leap = parseInt(Y);
+    var Y = parseInt(birthYear);
+    if (Y % 4 == 0) {
+        var data = 1;
+        return data;
+    } else {
+        var notLeap = 0;
+        return notLeap;
+    }
+
 
 }
 
