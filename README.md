@@ -9,13 +9,23 @@ Sometimes people may forget the day of the week that they were born. But Ghana h
 * Change directory to the location you want to copy the project to.
 * Clone the repo {git clone https://github.com/rotich1/akan-name }
 * Now you have the project in your local machine
-## Behaviour Driven Development
-The application: 
-* Allows users to input the details i.e name, gender and date of birth.
-* If there is no input from user, the application alerts the user to provide the missing values.
-* Checks the inputs and validates if they are correct.
-* If inputs are invalid, the application gives an alert message to the user.
-* Else if inputs are correct, the application evaluates the day of the week and uses the result to derive the akan name based on the formula output and gender.  
+## Behaviour
+
+* Check if it's male born on Sunday the outcome will be Kwasi.
+* Check if it's male born on Monday the outcome will be Kwadwo.
+* Check if it's male born on Tuesday the outcome will be Kwabena.
+* Check if it's male born on Wednesday the outcome will be Kwaku.
+* Check if it's male born on Thursday the outcome will be Yaw.
+* Check if it's male born on Friday the outcome will be Kofi.
+* Check if it's male born on Suturday the outcome will be Kwame.
+  
+* Check if it's male born on Sunday the outcome will be Akosua.
+* Check if it's male born on Monday the outcome will be Adwoa.
+* Check if it's male born on Tuesday the outcome will be Abenaa.
+* Check if it's male born on Wednesday the outcome will be Akua.
+* Check if it's male born on Thursday the outcome will be Yaa.
+* Check if it's male born on Friday the outcome will be Afua.
+* Check if it's male born on Suturday the outcome will be Ama.
 ### Live Site
 View [live](https://rotich1.github.io/akan-name/)
 ## Known Bugs
